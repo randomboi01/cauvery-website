@@ -132,8 +132,10 @@ label {
 }
 
 #suggestion {
-    width: 80%;
-    height: 60%;
+    /* width: 80%;
+    height: 60%; */
+    width: 60vw;
+    height: 40vh;
     background-color: beige;
     border: none;
     border-radius: 15px;
@@ -179,7 +181,7 @@ label {
     font-size: 20px;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:830px) {
 
     .--nav-logo {
         margin-bottom: 2%;
@@ -212,7 +214,12 @@ label {
 
     .--form {
         padding: 1%;
-        width: 90%;
+        width: 70% !important;
+        height: 40%;
+    }
+
+    .--form-input {
+        margin-bottom: 1%;
     }
 
     .--form-title {
@@ -228,7 +235,7 @@ label {
     }
 
     label {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .--form-submit {
@@ -249,7 +256,7 @@ label {
     }
 
     label {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .--form-input {
@@ -304,12 +311,41 @@ label {
 
 }
 
-@media only screen and (max-width:1300px) {
+@media only screen and (max-width:1400px) {
     .--footer-text {
         font-size: 15px;
     }
 
     .--form {
         width: 60%;
+    }
+}
+
+@media only screen and (min-width:831px) and (max-width:1400px) {
+    .--form {
+        height: 40%;
+    }
+
+    .--form-submit {
+        padding: 2% 6%;
+    }
+
+    .--form-input {
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (min-width: 1401px) {
+    #suggestion {
+        width: 100%;
+        height: 80%;
+    }
+
+    .--form {
+        height: 50vh;
+    }
+    
+    .--form-input {
+        height: 120%;
     }
 }
