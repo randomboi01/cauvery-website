@@ -27,11 +27,12 @@ nav {
     border-right: 5px solid rgb(6, 112, 249);
     text-decoration: none;
     color: black;
-    /* padding: 13px 23px; */
+    /* padding: 1% 7%; */
     background-color: #e5830305;
     width: 12vw;
     height: 8vh;
     text-align: center;
+    /* background-clip:content-box; */
 }
 
 .--nav-link-item:hover {
@@ -40,9 +41,9 @@ nav {
     /* padding: 15px 25px; */
 }
 
-#-nav-2 {
+/* #-nav-2 {
     box-sizing: padding-box;
-}
+} */
 
 .--hidden {
     height: 10vh;
