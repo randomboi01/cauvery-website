@@ -1,37 +1,16 @@
-let login = document.getElementById('-nav-2');
-let page = document.getElementById("--login-portal");
-let sub = document.getElementById("submit1")
 let hidden = document.querySelector('.--hidden');
 
-hidden.style.visibility = "hidden"
-page.style.display = "none"
 
-sub.addEventListener("click", checkEmail);
+hidden.style.visibility = "hidden"
+
 // login.addEventListener("click", loginPage);
 
-// link in buttons
+// js in problems file
 // coloring
 //live animation
+// login page styling
 
 
-
-
-
-function checkEmail(e) {
-  //remove the default
-  e.preventDefault();
-  mail = document.getElementById("email").value;
-  console.log(mail);
-  
-  if (mail.indexOf("smail.iitm.ac.in") >= 0){
-    console.log("hi");
-    hidden.style.visibility = "visible"
-  }
-  else {
-    alert("Incorrect Email");
-  }
-  
-}
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -63,14 +42,14 @@ function showSlides(n) {
 }
 
 console.log(hidden)
-function loginPage() {
-  if (page.style.display != "none") {
-    page.style.display = "none";
-  }
+// function loginPage() {
+//   if (page.style.display != "none") {
+//     page.style.display = "none";
+//   }
   
-  else {
-        page.style.display = "block";
-    }
-}
+//   else {
+//         page.style.display = "block";
+//     }
+// }
 
-console.log(page)
+console.log(page);
