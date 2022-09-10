@@ -3,7 +3,7 @@ let page = document.getElementById("--login-portal");
 let sub = document.getElementById("submit1")
 let hidden = document.querySelector('.--hidden');
 
-page.style.display = "none"
+// page.style.display = "none"
 
 sub.addEventListener("click", checkEmail);
 
