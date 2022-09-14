@@ -15,6 +15,24 @@ hidden.style.visibility = "hidden"
 let slideIndex = 1;
 showSlides(slideIndex);
 
+
+function autofunction () {
+  let n = 1;
+  let slides = document.querySelectorAll("mySlides");
+  setInterval(
+    function () {
+      plusSlides(n);
+      n++;
+      if (n >= 4) {
+        n = 1;
+      }
+      console.log(n);
+    }
+    , 3000)
+  }
+  
+  let autoSlides = document.getElementById("auto");
+  autoSlides.addEventListener("onload", autofunction());
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -40,6 +58,8 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+let body = document.body;
+// body.onload = setInterval(plusSlides(5), 100);
 
 console.log(hidden)
 // function loginPage() {
@@ -67,5 +87,3 @@ document.querySelectorAll(".nav-link-item").forEach(n => n.addEventListener("cli
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }));
-
-console.log(page);
