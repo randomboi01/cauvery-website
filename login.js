@@ -22,4 +22,8 @@ function checkEmail(e) {
       alert("Incorrect Email");
     }
     
-  }
+}
+
+function loginPage() {
+  console.log("hello world")
+}
