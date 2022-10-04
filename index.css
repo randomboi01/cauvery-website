@@ -928,11 +928,12 @@ table td {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f1f7d7;
+    /* background-color: #f1f7d7; */
+    background: linear-gradient(40deg, #fcf4dd, #a69579c2);
 }
 
 #div4 img{
-    max-width: 45%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -961,18 +962,21 @@ table td {
 }
 
 .facilities .image_box div {
-    background-color: #ace5e5;
+    /* background-color: #ace5e5; */
+    background: linear-gradient(2deg, rgba(0, 255, 255, 0.937), rgba(255, 255, 255, 0.888), rgba(255, 255, 255, 0.668));
     height: 10vh;
     width: 50%;
     line-height: 10vh;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 1px #18384b;
+    box-shadow: 1px 1px 1px 1px #18384b;
     color: black;
+    transition: 0.2s all ease-in-out;
     font-size: larger;
 }
 
 .image_box div:hover {
-    box-shadow: -2px -2px 2px 1px black;
+    box-shadow: -0.8px -0.8px 0.8px 1px #18384b;
+    /* box-shadow: -2px -2px 2px 1px black; */
 }
 /* grid-row: span 1; */
 /* grid-column: span 1; */
