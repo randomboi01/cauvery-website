@@ -947,6 +947,13 @@ table td {
 
 #div5 {
     background-image: url(./images/party.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+#div5 p {
+    color: white;
+    text-shadow: 1.5px 1px 4px white;
 }
 
 #div1, #div2, #div3, #div5 {

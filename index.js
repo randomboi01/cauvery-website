@@ -87,3 +87,7 @@ document.querySelectorAll(".nav-link-item").forEach(n => n.addEventListener("cli
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }));
+
+function displayContent () {
+  document.getElementById("para-content").innerText = "Ice-cream Night on 28/11/2022"
+}
